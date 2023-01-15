@@ -1,4 +1,81 @@
+/*Fonts*/
+.roboto-mono{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+}
+.roboto-mono-s{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+}
+.roboto-mono-b{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+}
+.open-sans{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.open-sans-s{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.open-sans-b{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+/*Configuración*/
+body{
+    background-color: #FFF;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.color-1{
+    color: #0b0bb2;
+}
+.color-2{
+    color: #00e96a;
+}
+
+header{
+    backdrop-filter: blur(15px);
+    background: rgba(239, 255, 246, .3);
+    width: 100%;
+}
 .logo{
     display: block;
     width: 175px;
+}
+header nav > ul > li > a.nav-link{
+    color: #333;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 30px 15px;
+}
+header nav > ul > li > a.nav-link:hover,
+header nav > ul > li > a.nav-link.active{
+    background-color: #1010de;
+    color: #FFF;
+}
+
+
+#inicio{
+    background-color: #effff6;
+}
+#inicio .container{
+    height: 100vh;
+}
+.title-main{
+    font-size: 60px;
+    line-height: 65px;
+    letter-spacing: -3px;
+}
+.title-main small{
+    font-size: 35px;
+    line-height: 40px;
+}
+.title-ing{
+    font-size: 35px;
+    line-height: 40px;
 }
