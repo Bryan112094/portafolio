@@ -79,3 +79,21 @@ header nav > ul > li > a.nav-link.active{
     font-size: 35px;
     line-height: 40px;
 }
+#inicio .botones{
+    max-width: 420px;
+    width: 100%;
+}
+#inicio .botones a{
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: all .5s ease-in-out;
+}
+#inicio .botones a:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
