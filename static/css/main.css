@@ -60,7 +60,7 @@ header nav > ul > li > a.nav-link.active{
 }
 
 
-#inicio{
+.fondo-general{
     background-color: #effff6;
 }
 #inicio .container{
@@ -97,3 +97,8 @@ header nav > ul > li > a.nav-link.active{
     transform: scale(1.1);
 }
 
+#sobre-mi,
+#portafolio,
+#skills{
+    padding: 80px 0;
+}
