@@ -102,3 +102,14 @@ header nav > ul > li > a.nav-link.active{
 #skills{
     padding: 80px 0;
 }
+
+#skills .skill{
+    max-width: 200px;
+    margin: 0 auto 30px;
+    background-color: #FFF;
+    height: 200px;
+    border-radius: 10px;
+}
+#skills .skill img{
+    max-width: 100px;
+}

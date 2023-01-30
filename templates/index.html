@@ -28,7 +28,7 @@
         </div>
     </header>
     <main>
-        <section id="inicio"><div class="container d-flex flex-row-reverse justify-content-between align-items-center fondo-general">
+        <section id="inicio" class="fondo-general"><div class="container d-flex flex-row-reverse justify-content-between align-items-center">
             <div class="col-6 text-center">
                 <img class="rounded-circle" src="{{ url_for('static', filename='images/bryan-guevara.jpg') }}" alt="Ing. Cristhian Bryan Guevara Ascoy">
             </div>
@@ -73,7 +73,20 @@
                 </ul>
             </div>
         </div></section>
-        <section id="skills" class="fondo-general"></section>
+        <section id="skills" class="fondo-general"><div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <div class="col-3"><figure class="rel skill d-flex justify-content-center align-items-center"><img src="{{ url_for('static', filename='images/skill/HTML5.svg') }}" alt=""></figure></div>
+            <div class="col-3"><figure class="rel skill d-flex justify-content-center align-items-center"><img src="{{ url_for('static', filename='images/skill/CSS3.svg') }}" alt=""></figure></div>
+            <div class="col-3"><figure class="rel skill d-flex justify-content-center align-items-center"><img src="{{ url_for('static', filename='images/skill/Javascript.svg') }}" alt=""></figure></div>
+            <div class="col-3"><figure class="rel skill d-flex justify-content-center align-items-center"><img src="{{ url_for('static', filename='images/skill/PHP.svg') }}" alt=""></figure></div>
+            <div class="col-3"><figure class="rel skill d-flex justify-content-center align-items-center"><img src="{{ url_for('static', filename='images/skill/JQuery.svg') }}" alt=""></figure></div>
+            <div class="col-3"><figure class="rel skill d-flex justify-content-center align-items-center"><img src="{{ url_for('static', filename='images/skill/MySQL.svg') }}" alt=""></figure></div>
+            <div class="col-3"><figure class="rel skill d-flex justify-content-center align-items-center"><img src="{{ url_for('static', filename='images/skill/Laravel.svg') }}" alt=""></figure></div>
+            <div class="col-3"><figure class="rel skill d-flex justify-content-center align-items-center"><img src="{{ url_for('static', filename='images/skill/Python.svg') }}" alt=""></figure></div>
+            <div class="col-3"><figure class="rel skill d-flex justify-content-center align-items-center"><img src="{{ url_for('static', filename='images/skill/Bootstrap.svg') }}" alt=""></figure></div>
+            <div class="col-3"><figure class="rel skill d-flex justify-content-center align-items-center"><img src="{{ url_for('static', filename='images/skill/Foundation.svg') }}" alt=""></figure></div>
+            <div class="col-3"><figure class="rel skill d-flex justify-content-center align-items-center"><img src="{{ url_for('static', filename='images/skill/VisualStudioCode.svg') }}" alt=""></figure></div>
+            <div class="col-3"><figure class="rel skill d-flex justify-content-center align-items-center"><img src="{{ url_for('static', filename='images/skill/Git.svg') }}" alt=""></figure></div>
+        </div></section>
         <section id="portafolio"></section>
         <section id="contacto" class="fondo-general"></section>
     </main>
