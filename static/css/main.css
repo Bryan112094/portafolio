@@ -109,7 +109,30 @@ header nav > ul > li > a.nav-link.active{
     background-color: #FFF;
     height: 200px;
     border-radius: 10px;
+    padding: 10px;
+    transition: all .5s ease-in-out;
 }
-#skills .skill img{
+#skills .skill:hover{
+    cursor: pointer;
+}
+#skills .skill figure{
     max-width: 100px;
+    height: 100px;
+    transition: all .5s ease-in-out;
+    margin: 0;
+}
+#skills .skill figure img{
+    max-width: 100px;
+    height: 90px;
+}
+#skills .skill span{ 
+    height: 0;
+    opacity: 0;
+    font-size: 16px;
+    line-height: 21px;
+    transition: all .5s ease-in-out;
+}
+#skills .skill:hover span{
+    opacity: 1;
+    height: 24px;
 }
