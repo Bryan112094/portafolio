@@ -20,8 +20,8 @@
             <div class="logo"><img src="{{ url_for('static', filename='logos/logo.svg') }}" class="d-block" alt="Ingeniero Cristhian Bryan Guevara Ascoy"></div>
             <nav><ul class="nav">
                 <li class="nav-item"><a class="nav-link active" href=""><i class="fas fa-home"></i> INICIO</a></li>
-                <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-user-tie"></i> SOBRE MÍ</a></li>
-                <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-code"></i> SKILLS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre-mi"><i class="fas fa-user-tie"></i> SOBRE MÍ</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills"><i class="fas fa-code"></i> SKILLS</a></li>
                 <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-laptop-code"></i> PROYECTOS</a></li>
                 <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-at"></i> CONTACTO</a></li>
             </ul></nav>
@@ -47,11 +47,11 @@
                 </div>
             </div>
         </div></section>
-        <section id="sobre-mi"><div class="container d-flex flex-wrap justify-content-between align-items-center">
+        <section id="sobre-mi"><div class="container"><div class="row">
             <div class="col-12 text-center">
                 <h4 class="roboto-mono-b mb-5 color-3">Sobre Mí</h4>
             </div>
-            <div class="col-6"></div>
+            <div class="col-6">hola mundo</div>
             <div class="col-6">
                 <h2 class="roboto-mono-b mb-3 color2">Cristhian Bryan Guevara Ascoy</h2>
                 <ul>
@@ -72,82 +72,101 @@
                     </li>
                 </ul>
             </div>
-        </div></section>
+        </div></div></section>
         <section id="skills" class="fondo-general"><div class="container d-flex flex-wrap justify-content-between align-items-center">
-            <div class="col-3"><div class="skill d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 text-center">
+                <h4 class="roboto-mono-b mb-5 color-3">Skills</h4>
+            </div>
+            <div class="col-20"><div class="skill d-flex flex-column justify-content-center align-items-center">
                 <figure class="rel">
                     <img src="{{ url_for('static', filename='images/skill/HTML5.svg') }}" alt="">
                 </figure>
                 <span class="color1 roboto-mono-s">HTML5</span>
             </div></div>
-            <div class="col-3"><div class="skill d-flex flex-column justify-content-center align-items-center">
+            <div class="col-20"><div class="skill d-flex flex-column justify-content-center align-items-center">
                 <figure class="rel">
                     <img src="{{ url_for('static', filename='images/skill/CSS3.svg') }}" alt="">
                 </figure>
                 <span class="color1 roboto-mono-s">CSS3</span>
             </div></div>
-            <div class="col-3"><div class="skill d-flex flex-column justify-content-center align-items-center">
+            <div class="col-20"><div class="skill d-flex flex-column justify-content-center align-items-center">
                 <figure class="rel">
                     <img src="{{ url_for('static', filename='images/skill/Javascript.svg') }}" alt="">
                 </figure>
                 <span class="color1 roboto-mono-s">JavaScript</span>
             </div></div>
-            <div class="col-3"><div class="skill d-flex flex-column justify-content-center align-items-center">
+            <div class="col-20"><div class="skill d-flex flex-column justify-content-center align-items-center">
                 <figure class="rel">
                     <img src="{{ url_for('static', filename='images/skill/PHP.svg') }}" alt="">
                 </figure>
                 <span class="color1 roboto-mono-s">PHP</span>
             </div></div>
-            <div class="col-3"><div class="skill d-flex flex-column justify-content-center align-items-center">
+            <div class="col-20"><div class="skill d-flex flex-column justify-content-center align-items-center">
                 <figure class="rel">
                     <img src="{{ url_for('static', filename='images/skill/JQuery.svg') }}" alt="">
                 </figure>
                 <span class="color1 roboto-mono-s">JQuery</span>
             </div></div>
-            <div class="col-3"><div class="skill d-flex flex-column justify-content-center align-items-center">
+            <div class="col-20"><div class="skill d-flex flex-column justify-content-center align-items-center">
                 <figure class="rel">
                     <img src="{{ url_for('static', filename='images/skill/MySQL.svg') }}" alt="">
                 </figure>
                 <span class="color1 roboto-mono-s">MySQL</span>
             </div></div>
-            <div class="col-3"><div class="skill d-flex flex-column justify-content-center align-items-center">
+            <div class="col-20"><div class="skill d-flex flex-column justify-content-center align-items-center">
                 <figure class="rel">
                     <img src="{{ url_for('static', filename='images/skill/Laravel.svg') }}" alt="">
                 </figure>
                 <span class="color1 roboto-mono-s">Laravel</span>
             </div></div>
-            <div class="col-3"><div class="skill d-flex flex-column justify-content-center align-items-center">
+            <div class="col-20"><div class="skill d-flex flex-column justify-content-center align-items-center">
                 <figure class="rel">
                     <img src="{{ url_for('static', filename='images/skill/Python.svg') }}" alt="">
                 </figure>
                 <span class="color1 roboto-mono-s">Python</span>
             </div></div>
-            <div class="col-3"><div class="skill d-flex flex-column justify-content-center align-items-center">
+            <div class="col-20"><div class="skill d-flex flex-column justify-content-center align-items-center">
+                <figure class="rel">
+                    <img src="{{ url_for('static', filename='images/skill/Flask.svg') }}" alt="">
+                </figure>
+                <span class="color1 roboto-mono-s">Flask</span>
+            </div></div>
+            <div class="col-20"><div class="skill d-flex flex-column justify-content-center align-items-center">
                 <figure class="rel">
                     <img src="{{ url_for('static', filename='images/skill/Bootstrap.svg') }}" alt="">
                 </figure>
                 <span class="color1 roboto-mono-s">Bootstrap</span>
             </div></div>
-            <div class="col-3"><div class="skill d-flex flex-column justify-content-center align-items-center">
+            <div class="col-20"><div class="skill d-flex flex-column justify-content-center align-items-center">
                 <figure class="rel">
                     <img src="{{ url_for('static', filename='images/skill/Foundation.svg') }}" alt="">
                 </figure>
                 <span class="color1 roboto-mono-s">Foundation</span>
             </div></div>
-            <div class="col-3"><div class="skill d-flex flex-column justify-content-center align-items-center">
+            <div class="col-20"><div class="skill d-flex flex-column justify-content-center align-items-center">
                 <figure class="rel">
                     <img src="{{ url_for('static', filename='images/skill/VisualStudioCode.svg') }}" alt="">
                 </figure>
                 <span class="color1 roboto-mono-s">Visual Studio Code</span>
             </div></div>
-            <div class="col-3"><div class="skill d-flex flex-column justify-content-center align-items-center">
+            <div class="col-20"><div class="skill d-flex flex-column justify-content-center align-items-center">
                 <figure class="rel">
                     <img src="{{ url_for('static', filename='images/skill/Git.svg') }}" alt="">
                 </figure>
                 <span class="color1 roboto-mono-s">Git</span>
             </div></div>
+            <div class="col-20"><div class="skill d-flex flex-column justify-content-center align-items-center">
+                <figure class="rel">
+                    <img src="{{ url_for('static', filename='images/skill/GitHub.svg') }}" alt="">
+                </figure>
+                <span class="color1 roboto-mono-s">GitHub</span>
+            </div></div>
         </div></section>
-        <section id="portafolio"></section>
+        <section id="projects"><div class="container"><div class="row">
+            <div class="col-6"><div class="project">
+                <figure><img src="{{ url_for('static', filename='images/projects/mailer.jpg') }}" alt=""></figure>
+            </div></div>
+        </div></div></section>
         <section id="contacto" class="fondo-general"></section>
     </main>
     <footer>

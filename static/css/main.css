@@ -37,6 +37,9 @@ body{
 .color-2{
     color: #00e96a;
 }
+.col-20{
+    width: 20%;
+}
 
 header{
     backdrop-filter: blur(15px);
