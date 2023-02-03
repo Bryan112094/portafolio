@@ -155,27 +155,39 @@ header nav > ul > li > a.nav-link.active{
 #projects .project {
     max-width: 355px;
     margin: 0 auto 50px;
-}
-#projects .project figure{
-    height: 164px;
-    overflow: hidden;
-}
-#projects .project figure img{
+    background-color: #effff6;
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
+    box-shadow: 0 6px 15px rgba(0,0,0,.075)!important;
+    padding-bottom: 20px;
 }
-#projects .project figure:hover img{
-    -webkit-transform: scale(1.20);
-    transform: scale(1.20);
+#projects .project:hover{
+    -webkit-transform: scale(1.10);
+    transform: scale(1.10);
+}
+#projects .project figure{
+    height: 164px;
+    text-align: center;
+    overflow: hidden;
+}
+#projects .project figure img{
+    border-radius: 6px 6px 0 0;
 }
 #projects .project .detalle{
-    padding: 0 10px;
+    padding: 0 15px;
+}
+#projects .project p{
+    min-height: 72px;
 }
 #projects .project span{
     font-size: 22px;
     line-height: 27px;
     display: block;
     padding-bottom: 5px;
+}
+#projects .project .ico-lenguaje > div{
+    width: 60px;
+    padding: 10px;
 }

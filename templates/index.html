@@ -49,7 +49,7 @@
         </div></section>
         <section id="sobre-mi"><div class="container"><div class="row">
             <div class="col-12 text-center">
-                <h4 class="roboto-mono-b mb-5 color-3">Sobre Mí</h4>
+                <h3 class="roboto-mono-b mb-5 color-3">Sobre Mí</h3>
             </div>
             <div class="col-6">hola mundo</div>
             <div class="col-6">
@@ -75,7 +75,7 @@
         </div></div></section>
         <section id="skills" class="fondo-general"><div class="container d-flex flex-wrap justify-content-between align-items-center">
             <div class="col-12 text-center">
-                <h4 class="roboto-mono-b mb-5 color-3">Skills</h4>
+                <h3 class="roboto-mono-b mb-5 color-3">Skills</h3>
             </div>
             <div class="col-20"><div class="skill d-flex flex-column justify-content-center align-items-center">
                 <figure class="rel">
@@ -164,27 +164,65 @@
         </div></section>
         <section id="projects"><div class="container"><div class="row">
             <div class="col-12 text-center">
-                <h4 class="roboto-mono-b mb-5 color-3">Proyectos</h4>
+                <h3 class="roboto-mono-b mb-5 color-3">Proyectos</h3>
             </div>
-            <div class="col-4"><div class="project">
-                <figure class="position-relative"><img src="{{ url_for('static', filename='images/projects/mailer.jpg') }}" alt=""></figure>
+            <div class="col-4"><div class="project border border-primary rounded-2">
+                <figure class="position-relative border-bottom border-primary border-2"><img src="{{ url_for('static', filename='images/projects/mailer.jpg') }}" alt=""></figure>
                 <div class="detalle">
                     <span class="color1 roboto-mono-s">Mailer APP</span>
                     <p>Es una aplicación que envía correos utilizando la API de SendGrid</p>
+                    <div class="ico-lenguaje d-flex">
+                        <div><img src="{{ url_for('static', filename='images/skill/Python.svg') }}" alt=""></div>
+                        <div><img src="{{ url_for('static', filename='images/skill/Flask.svg') }}" alt=""></div>
+                        <div><img src="{{ url_for('static', filename='images/skill/CSS3.svg') }}" alt=""></div>
+                    </div>
                 </div>
             </div></div>
-            <div class="col-4"><div class="project">
-                <figure class="position-relative"><img src="{{ url_for('static', filename='images/projects/gestordeclientes.jpg') }}" alt=""></figure>
+            <div class="col-4"><div class="project border border-primary rounded-2">
+                <figure class="position-relative border-bottom border-primary border-2"><img src="{{ url_for('static', filename='images/projects/gestordeclientes.jpg') }}" alt=""></figure>
                 <div class="detalle">
                     <span class="color1 roboto-mono-s">Gestor de Clientes</span>
                     <p>Es una aplicación para gestionar mis clientes</p>
+                    <div class="ico-lenguaje d-flex">
+                        <div><img src="{{ url_for('static', filename='images/skill/Python.svg') }}" alt=""></div>
+                    </div>
                 </div>
             </div></div>
-            <div class="col-4"><div class="project">
-                <figure class="position-relative"><img src="{{ url_for('static', filename='images/projects/gestordetareas.jpg') }}" alt=""></figure>
+            <div class="col-4"><div class="project border border-primary rounded-2">
+                <figure class="position-relative border-bottom border-primary border-2"><img src="{{ url_for('static', filename='images/projects/gestordetareas.jpg') }}" alt=""></figure>
                 <div class="detalle">
                     <span class="color1 roboto-mono-s">Gestor de Tareas</span>
                     <p>Es una aplicación para gestionar mis tareas diarias y tacharlas si ya se culminaron</p>
+                    <div class="ico-lenguaje d-flex">
+                        <div><img src="{{ url_for('static', filename='images/skill/Python.svg') }}" alt=""></div>
+                    </div>
+                </div>
+            </div></div>
+            <div class="col-4"><div class="project border border-primary rounded-2">
+                <div class="carousel slide" data-bs-ride="carousel"><div class="carousel-inner">
+                    <div class="carousel-item active"><figure class="position-relative border-bottom border-primary border-2"><img src="{{ url_for('static', filename='images/projects/login-laravel.jpg') }}" alt=""></figure></div>
+                    <div class="carousel-item"><figure class="position-relative border-bottom border-primary border-2"><img src="{{ url_for('static', filename='images/projects/crud-laravel.jpg') }}" alt=""></figure></div>
+                </div></div>
+                <div class="detalle">
+                    <span class="color1 roboto-mono-s">Login y CRUD</span>
+                    <p>Es una aplicación para gestionar mis tareas diarias y tacharlas si ya se culminaron</p>
+                    <div class="ico-lenguaje d-flex">
+                        <div><img src="{{ url_for('static', filename='images/skill/Laravel.svg') }}" alt=""></div>
+                        <div><img src="{{ url_for('static', filename='images/skill/Bootstrap.svg') }}" alt=""></div>
+                    </div>
+                </div>
+            </div></div>
+            <div class="col-4"><div class="project border border-primary rounded-2">
+                <figure class="position-relative border-bottom border-primary border-2"><img src="{{ url_for('static', filename='images/projects/portafolio.jpg') }}" alt=""></figure>
+                <div class="detalle">
+                    <span class="color1 roboto-mono-s">Gestor de Tareas</span>
+                    <p>Es una aplicación para gestionar mis tareas diarias y tacharlas si ya se culminaron</p>
+                    <div class="ico-lenguaje d-flex">
+                        <div><img src="{{ url_for('static', filename='images/skill/Python.svg') }}" alt=""></div>
+                        <div><img src="{{ url_for('static', filename='images/skill/Flask.svg') }}" alt=""></div>
+                        <div><img src="{{ url_for('static', filename='images/skill/Bootstrap.svg') }}" alt=""></div>
+                        <div><img src="{{ url_for('static', filename='images/skill/JavaScript.svg') }}" alt=""></div>
+                    </div>
                 </div>
             </div></div>
         </div></div></section>
