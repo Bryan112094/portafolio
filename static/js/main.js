@@ -12,9 +12,16 @@
             loop: true
         });
     }
+    $(window).scroll( function(){ posicionarMenu();} );
 
     //Habilitar los tooltip
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 })(jQuery);
+
+function posicionarMenu(){
+    var altura_T = 90;
+    if($(window).scrollTop()>altura_T) $('header').addClass('flota');
+    else $('header').removeClass('flota');
+}

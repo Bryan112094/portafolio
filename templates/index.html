@@ -22,7 +22,7 @@
                 <li class="nav-item"><a class="nav-link active" href=""><i class="fas fa-home"></i> INICIO</a></li>
                 <li class="nav-item"><a class="nav-link" href="#sobre-mi"><i class="fas fa-user-tie"></i> SOBRE MÍ</a></li>
                 <li class="nav-item"><a class="nav-link" href="#skills"><i class="fas fa-code"></i> SKILLS</a></li>
-                <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-laptop-code"></i> PROYECTOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-laptop-code"></i> PROYECTOS</a></li>
                 <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-at"></i> CONTACTO</a></li>
             </ul></nav>
         </div>
@@ -163,8 +163,29 @@
             </div></div>
         </div></section>
         <section id="projects"><div class="container"><div class="row">
-            <div class="col-6"><div class="project">
-                <figure><img src="{{ url_for('static', filename='images/projects/mailer.jpg') }}" alt=""></figure>
+            <div class="col-12 text-center">
+                <h4 class="roboto-mono-b mb-5 color-3">Proyectos</h4>
+            </div>
+            <div class="col-4"><div class="project">
+                <figure class="position-relative"><img src="{{ url_for('static', filename='images/projects/mailer.jpg') }}" alt=""></figure>
+                <div class="detalle">
+                    <span class="color1 roboto-mono-s">Mailer APP</span>
+                    <p>Es una aplicación que envía correos utilizando la API de SendGrid</p>
+                </div>
+            </div></div>
+            <div class="col-4"><div class="project">
+                <figure class="position-relative"><img src="{{ url_for('static', filename='images/projects/gestordeclientes.jpg') }}" alt=""></figure>
+                <div class="detalle">
+                    <span class="color1 roboto-mono-s">Gestor de Clientes</span>
+                    <p>Es una aplicación para gestionar mis clientes</p>
+                </div>
+            </div></div>
+            <div class="col-4"><div class="project">
+                <figure class="position-relative"><img src="{{ url_for('static', filename='images/projects/gestordetareas.jpg') }}" alt=""></figure>
+                <div class="detalle">
+                    <span class="color1 roboto-mono-s">Gestor de Tareas</span>
+                    <p>Es una aplicación para gestionar mis tareas diarias y tacharlas si ya se culminaron</p>
+                </div>
             </div></div>
         </div></div></section>
         <section id="contacto" class="fondo-general"></section>
