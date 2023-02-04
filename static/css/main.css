@@ -114,8 +114,9 @@ header nav > ul > li > a.nav-link.active{
 
 #sobre-mi,
 #projects,
-#skills{
-    padding: 80px 0;
+#skills,
+#contact{
+    padding: 80px 0 60px;
 }
 
 #skills .skill{
@@ -187,7 +188,19 @@ header nav > ul > li > a.nav-link.active{
     display: block;
     padding-bottom: 5px;
 }
+#projects .project .ico-lenguaje{
+    height: 80px;
+}
 #projects .project .ico-lenguaje > div{
     width: 60px;
     padding: 10px;
+}
+
+footer{
+    background-color: #f1f1f1;
+    padding: 20px 0;
+}
+footer p{
+    margin: 0;
+    padding: 0;
 }
