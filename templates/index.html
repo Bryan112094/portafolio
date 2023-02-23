@@ -23,7 +23,7 @@
                 <li class="nav-item"><a class="nav-link" href="#sobre-mi"><i class="fas fa-user-tie"></i> SOBRE MÍ</a></li>
                 <li class="nav-item"><a class="nav-link" href="#skills"><i class="fas fa-code"></i> SKILLS</a></li>
                 <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-laptop-code"></i> PROYECTOS</a></li>
-                <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-at"></i> CONTACTO</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-at"></i> CONTACTO</a></li>
             </ul></nav>
         </div>
     </header>
@@ -47,29 +47,29 @@
                 </div>
             </div>
         </div></section>
-        <section id="sobre-mi"><div class="container"><div class="row">
+        <section id="sobre-mi"><div class="container"><div class="row d-flex justify-content-between align-items-center">
             <div class="col-12 text-center">
                 <h3 class="roboto-mono-b mb-5 color-3">Sobre Mí</h3>
             </div>
-            <div class="col-6">hola mundo</div>
+            <div class="col-6 text-center">
+                <img src="{{ url_for('static', filename='images/sobre-mi.png') }}" alt="">
+            </div>
             <div class="col-6">
                 <h2 class="roboto-mono-b mb-3 color2">Cristhian Bryan Guevara Ascoy</h2>
                 <ul>
                     <li>Títulado de la carrera profesional de Ingeniería Teleinformática</li>
-                    <li>Me he desempeñado de manera eficaz en el desarrollo de Páginas Web y Sistemas Web.</li>
-                    <li>Además, cuento con amplio conocimiento en 
-                        mantenimiento preventivo y correctivos de computadoras y 
-                        conexiones de redes informáticas</li>
-                    <li>Me considero una persona , , , , que siempre está en 
-                        busca de mejora personal y profesional.
-                        <ul>
-                            <li>responsable</li>
-                            <li>amable</li>
-                            <li>honesta</li>
-                            <li>empeñosa</li>
-                            <li>autodidacta</li>
-                        </ul>
-                    </li>
+                    <li>Dominio de lenguajes de programación</li>
+                    <li>Conocimientos de Base de Datos</li>
+                    <li>Capacidad para analizar y resolver problemas</li>
+                    <li>Conocimientos técnicos sobre informática</li>
+                    <li>Capacidad para organizar mi trabajo</li>
+                    <li>Habilidad para el trabajo individual y en equipo</li>
+                    <li>Me desempeño de manera eficaz en el desarrollo de Páginas Web y Sistemas Web.</li>
+                    <li>Responsable</li>
+                    <li>Honesta</li>
+                    <li>Empeñoso</li>
+                    <li>Autodidacta</li>
+                    <li>Soy una persona que siempre está en busca de mejora personal y profesional.</li>
                 </ul>
             </div>
         </div></div></section>
@@ -282,7 +282,36 @@
                 </div>
             </div></div>
         </div></div></section>
-        <section id="contact" class="fondo-general"></section>
+        <section id="contact" class="fondo-general"><div class="container"><div class="row d-flex justify-content-between align-items-center">
+            <div class="col-6">
+                <h4 class="roboto-mono-s color-3">Contáctame por mis redes sociales o envíame un mensaje por el formulario</h4>
+                <div class="d-flex flex-row justify-content-between align-items-center mt-4 botones tooltip-demo">
+                    <a href="" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="col-6"><form class="row needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    <div class="invalid-feedback">Nombre requerido</div>
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="correo" name="correo" required>
+                    <div class="invalid-feedback">Correo requerido</div>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
+                    <div class="invalid-feedback">Mensaje requerido</div>
+                </div>
+                <div class="mb-3"><button type="submit" class="btn btn-primary">Enviar</button></div>
+            </form></div>
+        </div></div></section>
     </main>
     <footer><div class="container justify-content-center">
         <p>Hecho con &#128151;, por Cristhian Bryan Guevara Ascoy</p>
