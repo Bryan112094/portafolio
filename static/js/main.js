@@ -22,19 +22,54 @@
     var forms = document.querySelectorAll('.needs-validation')
   
     // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-      .forEach(function (form) {
+    Array.prototype.slice.call(forms).forEach(function (form) {
         form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-  
-          form.classList.add('was-validated')
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+            form.classList.add('was-validated')
         }, false)
-      })
+    })
 
 })(jQuery);
+
+//Configurar menú
+const menu = document.querySelector(".menu");
+const openMenu = document.querySelector(".open-menu");
+const closeMenu = document.querySelector(".close-menu");
+
+function toggleMenu(){
+    menu.classList.toggle('menu_opened');
+}
+
+openMenu.addEventListener("click", toggleMenu);
+closeMenu.addEventListener("click", toggleMenu);
+
+const menuLinks = document.querySelectorAll('.nav a[href^="#"]');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        const id = entry.target.getAttribute("id");
+        const menuLink = document.querySelector(`.nav a[href="#${id}"]`)
+
+        if(entry.isIntersecting){
+            document.querySelector(".nav a.active").classList.remove("active");
+            menuLink.classList.add("active");
+        }
+    })
+}, {rootMargin: '-40% 0px -60% 0px'})
+
+menuLinks.forEach(menuLink =>{
+    menuLink.addEventListener("click", function() {
+        menu.classList.remove("menu_opened");
+    })
+
+    const hash = menuLink.getAttribute("href");
+    const target = document.querySelector(hash);
+    if (target) {
+        observer.observe(target)
+    }
+})
 
 function posicionarMenu(){
     var altura_T = 90;

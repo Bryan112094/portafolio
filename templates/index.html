@@ -8,31 +8,32 @@
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/983debfd2b.js" crossorigin="anonymous"></script>
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="position-fixed"><div class="container d-flex flex-row justify-content-between align-items-center">
-            <div class="logo"><img src="{{ url_for('static', filename='logos/logo.svg') }}" class="d-block" alt="Ingeniero Cristhian Bryan Guevara Ascoy"></div>
-            <nav><ul class="nav">
-                <li class="nav-item"><a class="nav-link active" href=""><i class="fas fa-home"></i> INICIO</a></li>
-                <li class="nav-item"><a class="nav-link" href="#sobre-mi"><i class="fas fa-user-tie"></i> SOBRE MÍ</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills"><i class="fas fa-code"></i> SKILLS</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-laptop-code"></i> PROYECTOS</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-at"></i> CONTACTO</a></li>
-            </ul></nav>
-        </div>
-    </header>
+    <header class="position-fixed"><div class="container-lg d-flex justify-content-between align-items-center">
+        <div class="logo"><a href="#inicio"><img src="{{ url_for('static', filename='logos/logo.svg') }}" class="d-block" alt="Ingeniero Cristhian Bryan Guevara Ascoy"></a></div>
+        <button class="open-menu" arial-label="Abrir Menú"><i class="fa-solid fa-bars"></i></button>
+        <nav class="menu"><ul class="nav">
+            <button class="close-menu" arial-label="Cerrar Menú"><i class="fa-solid fa-xmark"></i></button>
+            <li class="nav-item"><a class="nav-link active" href="#inicio"><i class="fas fa-home"></i> INICIO</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre-mi"><i class="fas fa-user-tie"></i> SOBRE MÍ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills"><i class="fas fa-code"></i> SKILLS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-laptop-code"></i> PROYECTOS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-at"></i> CONTACTO</a></li>
+        </ul></nav>
+    </div></header>
     <main>
-        <section id="inicio" class="fondo-general"><div class="container d-flex flex-row-reverse justify-content-between align-items-center">
-            <div class="col-6 text-center">
+        <section id="inicio" class="fondo-general"><div class="container-lg d-flex flex-row-reverse justify-content-between align-items-center">
+            <div class="col-md-6 text-center">
                 <img class="rounded-circle" src="{{ url_for('static', filename='images/bryan-guevara.jpg') }}" alt="Ing. Cristhian Bryan Guevara Ascoy">
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <h1 class="roboto-mono-b title-main mb-3"><small class="d-block">Hola! Soy</small>Cristhian Bryan Guevara Ascoy</h1>
                 <span class="d-block title-ing color-1 mb-3 open-sans-b">ING. TELEINFORMÁTICO</span>
                 <h2 class="typed-text-output d-inline open-sans-s color-2"></h2>
@@ -47,14 +48,14 @@
                 </div>
             </div>
         </div></section>
-        <section id="sobre-mi"><div class="container"><div class="row d-flex justify-content-between align-items-center">
+        <section id="sobre-mi"><div class="container-lg"><div class="row d-flex justify-content-between align-items-center">
             <div class="col-12 text-center">
                 <h3 class="roboto-mono-b mb-5 color-3">Sobre Mí</h3>
             </div>
-            <div class="col-6 text-center">
+            <div class="col-md-6 col-12 text-center">
                 <img src="{{ url_for('static', filename='images/sobre-mi.png') }}" alt="">
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-12">
                 <h2 class="roboto-mono-b mb-3 color2">Cristhian Bryan Guevara Ascoy</h2>
                 <ul>
                     <li>Títulado de la carrera profesional de Ingeniería Teleinformática</li>
@@ -66,14 +67,14 @@
                     <li>Habilidad para el trabajo individual y en equipo</li>
                     <li>Me desempeño de manera eficaz en el desarrollo de Páginas Web y Sistemas Web.</li>
                     <li>Responsable</li>
-                    <li>Honesta</li>
+                    <li>Honesto</li>
                     <li>Empeñoso</li>
                     <li>Autodidacta</li>
                     <li>Soy una persona que siempre está en busca de mejora personal y profesional.</li>
                 </ul>
             </div>
         </div></div></section>
-        <section id="skills" class="fondo-general"><div class="container d-flex flex-wrap justify-content-between align-items-center">
+        <section id="skills" class="fondo-general"><div class="container-lg d-flex flex-wrap justify-content-between align-items-center">
             <div class="col-12 text-center">
                 <h3 class="roboto-mono-b mb-5 color-3">Skills</h3>
             </div>

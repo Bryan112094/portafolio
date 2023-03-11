@@ -45,10 +45,14 @@ body{
 }
 
 header{
-    backdrop-filter: blur(15px);
     background: rgba(239, 255, 246, .3);
     width: 100%;
     z-index: 1;
+    transition: all .5s ease;
+}
+header.flota{
+    background: rgba(239, 255, 246, 1);
+    border-bottom: 1px solid #0b0bb2;
 }
 header .logo{
     display: block;
@@ -58,6 +62,12 @@ header .logo{
 header.flota .logo{
     width: 120px;
 }
+
+.open-menu,
+.close-menu{
+    display: none;
+}
+
 header nav > ul > li > a.nav-link{
     color: #333;
     font-size: 18px;
@@ -74,11 +84,10 @@ header nav > ul > li > a.nav-link.active{
     color: #FFF;
 }
 
-
 .fondo-general{
     background-color: #effff6;
 }
-#inicio .container{
+#inicio .container-lg{
     height: 100vh;
 }
 .title-main{
@@ -97,11 +106,13 @@ header nav > ul > li > a.nav-link.active{
 #inicio .botones{
     max-width: 420px;
     width: 100%;
+    flex-flow: row wrap;
 }
 #inicio .botones a{
     font-size: 30px;
     width: 60px;
     height: 60px;
+    margin-bottom: 10px;
     padding: 5px;
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -218,4 +229,135 @@ footer{
 footer p{
     margin: 0;
     padding: 0;
+}
+
+@media screen and (max-width: 950px) {
+    .menu{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #5353d3;
+        overflow-y: auto;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+    }
+    .menu .nav{
+        flex-direction: column;
+        flex-wrap: initial;
+        align-items: center;
+    }
+    .open-menu,
+    .close-menu{
+        display: block;
+        outline: none;
+        color: #FFF;
+    }
+    .open-menu{
+        color: #0b0bb2;
+        border: 2px solid #0b0bb2;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .close-menu{
+        font-size: 35px;
+        line-height: 36px;
+        padding: 0;
+        background: 0;
+        align-self: flex-end;
+        border: 0;
+        margin: 23px 16px 0 0;
+    }
+    header.flota .close-menu{
+        margin-top: 8px;
+    }
+    .menu_opened{
+        opacity: 1;
+        pointer-events: all;
+    }
+    header{
+        padding: 10px 0;
+    }
+    header.flota{
+        padding: 5px 0
+    }
+    header nav > ul > li > a.nav-link{
+        color: #FFF;
+        font-size: 18px;
+        line-height: 60px;
+        padding: 0;
+    }
+    header.flota nav > ul > li > a.nav-link {
+        padding: 0;
+    }
+    header nav > ul > li > a.nav-link:hover,
+    header nav > ul > li > a.nav-link.active{
+        background-color: transparent;
+        color: #FFF;
+    }
+    #sobre-mi,
+    #projects,
+    #skills,
+    #contact{
+        padding: 50px 0;
+    }
+    .title-main{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .title-main small,
+    .title-ing{
+        font-size: 30px;
+    }
+    .col-20{
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 770px) {
+    #inicio .container-lg{
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+    #inicio .container-lg .rounded-circle{
+        max-width: 250px;
+    }
+    .title-main{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .title-main small,
+    .title-ing{
+        font-size: 25px;
+    }
+    #inicio .botones{
+        max-width: 300px;
+    }
+    #inicio .botones a{
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    #sobre-mi img{
+        margin-bottom: 20px;
+    }
+    .col-20{
+        width: 50%;
+        padding: 5px;
+    }
+    #skills .skill{
+        height: auto;
+        margin-bottom: 10px;
+    }
+    #skills .skill figure{
+        display: none;
+    }
+    #skills .skill span,
+    #skills .skill:hover span {
+        opacity: 1;
+        height: auto;
+    }
 }
