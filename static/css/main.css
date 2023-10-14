@@ -152,7 +152,7 @@ header nav > ul > li > a.nav-link.active{
     max-width: 100px;
     height: 90px;
 }
-#skills .skill span{ 
+#skills .skill span{
     height: 0;
     opacity: 0;
     font-size: 16px;
@@ -210,9 +210,6 @@ header nav > ul > li > a.nav-link.active{
 #contact .centro-contact{
     max-width: 450px;
     margin: 0 auto;
-}
-#contact .centro-contact .redes{
-    max-width: 300px;
 }
 #contact .centro-contact .redes a{
     width: 50px;
