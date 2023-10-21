@@ -87,7 +87,7 @@ header nav > ul > li > a.nav-link.active{
 .fondo-general{
     background-color: #effff6;
 }
-#inicio .container-lg{
+#inicio .container-lg .row{
     height: 100vh;
 }
 .title-main{
@@ -127,14 +127,14 @@ header nav > ul > li > a.nav-link.active{
 #projects,
 #skills,
 #contact{
-    padding: 80px 0 60px;
+    padding: 90px 0 70px;
 }
 
 #skills .skill{
-    max-width: 200px;
-    margin: 0 auto 30px;
+    max-width: 170px;
+    margin: 0 auto 20px;
     background-color: #FFF;
-    height: 200px;
+    height: 170px;
     border-radius: 10px;
     padding: 10px;
     transition: all .5s ease-in-out;
